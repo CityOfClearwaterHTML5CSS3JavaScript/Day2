@@ -1,0 +1,69 @@
+/******************************************
+*
+*   Import Other CSS Files
+*
+******************************************/
+
+/* Step #3: Add Import for Background Colors */
+/*      Discuss Advantages of moving colors to separate CSS file */
+@import url("colors.css");
+
+
+
+/******************************************
+*
+*   Site Wide Element Selectors
+*
+******************************************/
+
+body {
+    /* Static Background Image */
+    background: url(../images/backgrounds/ClearwaterBeach1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/backgrounds/ClearwaterBeach1.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/backgrounds/ClearwaterBeach1.jpg', sizingMethod='scale')";
+}
+
+
+
+/******************************************
+*
+*   Background Image Overlay 1 pixel Grid
+*
+******************************************/
+
+.overlay {
+    background-image: url(../images/backgrounds/overlay.png);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+/******************************************
+*
+*   Header
+*
+******************************************/
+
+/* Step #2: Add CSS selector for header class */
+.header {
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    
+    /* Make it so header doesn't scroll off screen */
+    position: fixed;
+    
+    /* Step #3: Remove flat background color */
+    /*background-color: white;*/
+}

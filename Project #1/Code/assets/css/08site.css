@@ -1,0 +1,123 @@
+/******************************************
+*
+*   Import Other CSS Files
+*
+******************************************/
+
+@import url("colors.css");
+
+/* Step #7: Import fonts.css file */
+@import url("fonts.css");
+
+
+
+/******************************************
+*
+*   Site Wide Element Selectors
+*
+******************************************/
+
+body {
+    /* Step #6: Add site wide font into body element selector */
+    /* Site Wide Font */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    
+    /* Static Background Image */
+    background: url(../images/backgrounds/ClearwaterBeach1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/backgrounds/ClearwaterBeach1.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/backgrounds/ClearwaterBeach1.jpg', sizingMethod='scale')";
+}
+
+
+
+/******************************************
+*
+*   Background Image Overlay 1 pixel Grid
+*
+******************************************/
+
+.overlay {
+    background-image: url(../images/backgrounds/overlay.png);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+/******************************************
+*
+*   Header
+*
+******************************************/
+
+.header {
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    
+    /* Make it so header doesn't scroll off screen */
+    position: fixed;
+}
+
+.logo {
+    width: 100px;
+    height: 95px;
+    padding: 0 20px;
+    
+    border: 1px solid;
+    border-top: 0;
+    
+    /* 2 border-color declarations to provide non-alpha fallback */
+    border-color: #4d8dc6;
+    border-color: rgba(77, 141, 198, 0.2);
+
+    /* Step #2: Add float left so text moves next to image */
+    float: left; 
+}
+
+.logo-img {
+    margin-top: 25px;
+}
+
+/* Step #3: Add CSS selector for navlist class */
+.nav-list {
+    margin: 0;
+}
+
+/* Step #4: Add CSS selector for navlist class li element */
+.nav-list-item {
+    /* Remove bullets from list items */
+    list-style: none;
+    
+    /* Makes List Run Horizontal */
+    float: left;
+}
+
+/* Step #5: Add CSS selector for navlist class li element child a element */
+.nav-list-item-link {
+    /* Defaults to display: static; */
+    display: block;
+    padding: 30px 20px;
+
+    /* Space at top for color indicator bar */
+    border-top: 3px transparent solid;
+    
+    color: #333;
+    
+    /* Step #7: Add client side font */
+    font-family: 'UbuntuTitlingBold', sans-serif;
+    font-size: 16px;
+    font-weight: 300;       
+}
